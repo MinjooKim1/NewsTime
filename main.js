@@ -5,9 +5,7 @@ const menus = document.querySelectorAll(".menus button");
 menus.forEach((menu) =>
   menu.addEventListener("click", (event) => getNewsByCategory(event))
 );
-let url = new URL(
-  `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`
-);
+let url = new URL(` https://noona-times-be-5ca9402f90d9.herokuapp.com`);
 
 const getNews = async () => {
   const response = await fetch(url);
